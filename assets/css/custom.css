@@ -1,5 +1,7 @@
 :root {
   --twitch: #9145ff;
+  --twitch-lite: #bf91ff;
+  --twitch-dark: #492280;
 }
 
 body {
@@ -46,6 +48,26 @@ body {
   border-color: var(--twitch);
   color: var(--twitch);
   font-size: 12px;
+}
+
+#custom-nav #primary a.a-btn {
+  padding: 5px 16px;
+  border-radius: 3px;
+  border: 2px solid transparent;
+  color: white;
+  background: var(--twitch-lite);
+  transition: all 0.3s ease-in-out;
+}
+
+#custom-nav #primary a.a-btn:hover {
+  background: white;
+  color: var(--twitch);
+  border: 2px solid var(--twitch);
+}
+
+.special .about-img img {
+  max-width: 100%;
+  padding: 0 2rem;
 }
 
 #main {
